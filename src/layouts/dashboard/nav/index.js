@@ -57,17 +57,17 @@ export default function Nav({ openNav, onCloseNav }) {
         <Logo />
       </Box>
 
-      <Box sx={{ mb: 5, mx: 2.5 }}>
+      <Box sx={{ mb: 5, mx: 2.5, cursor: 'pointer' }}>
         <Link underline="none">
           <StyledAccount>
             <Avatar src={account.photoURL} alt="photoURL" />
 
             <Box sx={{ ml: 2 }}>
-              <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
+              <Typography variant="subtitle2" sx={{ color: 'text.primary', fontFamily: 'Noto Sans KR' }}>
                 {account.displayName}
               </Typography>
 
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              <Typography variant="body2" sx={{ color: 'text.secondary', fontFamily: 'Noto Sans KR' }}>
                 {account.role}
               </Typography>
             </Box>
@@ -102,7 +102,7 @@ export default function Nav({ openNav, onCloseNav }) {
           </Button>
         </Stack>
       </Box>
-    </Scrollbar>
+    </Scrollbar >
   );
 
   return (

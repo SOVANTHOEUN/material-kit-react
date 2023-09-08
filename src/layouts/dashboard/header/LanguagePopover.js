@@ -7,6 +7,16 @@ import { Box, MenuItem, Stack, IconButton, Popover } from '@mui/material';
 
 const LANGS = [
   {
+    value: 'kh',
+    label: 'Khmer',
+    icon: '/assets/icons/kh.svg',
+  },
+  {
+    value: 'kr',
+    label: 'Korean',
+    icon: '/assets/icons/kr.svg',
+  },
+  {
     value: 'en',
     label: 'English',
     icon: '/assets/icons/ic_flag_en.svg',
